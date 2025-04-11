@@ -41,7 +41,7 @@ async def send_poll():
 
 def schedule_poll():
 
-    schedule.every().friday.at("15:57").do(lambda: asyncio.create_task(send_poll()))
+    schedule.every().friday.at("20:00").do(lambda: asyncio.create_task(send_poll()))
 
 async def main():
     schedule_poll()
